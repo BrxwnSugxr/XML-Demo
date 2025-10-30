@@ -1,0 +1,10 @@
+<!ELEMENT studentList (firstName,lastName,studentID,result) >
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT studentID (#PCDATA)>
+<!ELEMENT result (subject*)>
+<!ELEMENT subject (unit,cp,mark,grade)>
+<!ELEMENT unit (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT mark (#PCDATA)>
+<!ELEMENT grade (#PCDATA)>
