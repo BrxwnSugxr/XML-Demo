@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE studentList [
+<!ELEMENT studentList (firstName,lastName,studentID,result) >
+<!ELEMENT firstName (#PCDATA)>
+<!ELEMENT lastName (#PCDATA)>
+<!ELEMENT studentID (#PCDATA)>
+<!ELEMENT result (subject*)>
+<!ELEMENT subject (unit,cp,mark,grade)>
+<!ELEMENT unit (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT mark (#PCDATA)>
+<!ELEMENT grade (#PCDATA)>
+]>
+<studentList>
+    <firstName>John</firstName>
+    <lastName>Pork</lastName>
+    <studentID>02120</studentID>
+    <result>
+        <subject>
+            <unit>MATH101</unit>
+            <cp>4</cp>
+            <mark>85</mark>
+            <grade>A</grade>
+        </subject>
+        <subject>
+            <unit>ECO101</unit>
+            <cp>4</cp>
+            <mark>70</mark>
+            <grade>B</grade>
+        </subject>
+        <subject>
+            <unit>CS101</unit>
+            <cp>5</cp>
+            <mark>80</mark>
+            <grade>A</grade>
+        </subject>
+        <subject>
+            <unit>LAW101</unit>
+            <cp>4</cp>
+            <mark>75</mark>
+            <grade>B</grade>
+        </subject>
+    </result>
+</studentList>
